@@ -3,8 +3,8 @@ def gettime():
     return datetime.datetime.now()
 
 # taking tasks
-def take(client):
-    if (client==1):
+def take(family_member):
+    if (family_member==1):
         exercise_lock = int(input("Enter 1 for exercise and 2 for food"))
         if(exercise_lock==1):
             value = input("Enter Dad's Exercise in a day:\n")
@@ -17,7 +17,7 @@ def take(client):
             with open("dad_food.txt","a") as op:
                 op.write(str([str(gettime())]) + ":" + value +"\n")
                 print("Successfully Written")
-    elif(client==2):
+    elif(family_member==2):
         exercise_lock = int(input("Enter 1 for exercise and 2 for food"))
         if (exercise_lock==1):
             value = input("Enter Mom's Exercise  in  day:\n")
@@ -32,7 +32,7 @@ def take(client):
                 op.write(str([str(gettime())]) + ":" + value + "\n")
                 print("Successfully Written")
 
-    elif (client==3):
+    elif (family_member==3):
         exercise_lock = int(input("Enter 1 for exercise and 2 for food"))
         if (exercise_lock==1):
             value = input("Enter Brother's Exercise in  day:\n")
@@ -48,7 +48,7 @@ def take(client):
                 print("Successfully Written")
 
 
-    elif (client==4):
+    elif (family_member==4):
         exercise_lock = int(input("Enter 1 for exercise and 2 for food"))
         if (exercise_lock==1):
             value = input("Enter Sister's Exercise  in  day:\n")
@@ -64,7 +64,7 @@ def take(client):
                 print("Successfully Written")
 
 
-    elif (client==5):
+    elif (family_member==5):
         exercise_lock = int(input("Enter 1 for exercise and 2 for food"))
         if (exercise_lock==1):
             value = input("Enter Ana's Exercise in a day:\n")
@@ -83,8 +83,8 @@ def take(client):
             print("Please Enter valid input (1(dad), 2(mom), 3(bro), 4(sis), 5(ana)")
 
 
-def retrive(client):
-    if client==1:
+def retrive(family_member):
+    if family_member==1:
         exercise_lock = int(input("Enter 1 For exercise and 2 for food"))
         if (exercise_lock==1):
             with open("dad_exercise.txt") as op:
@@ -94,7 +94,7 @@ def retrive(client):
             with open("dad_food.txt") as op:
                 for i in op:
                     print(i, end="")
-    elif (client==2):
+    elif (family_member==2):
         exercise_lock = int(input("Enter 1 For exercise and 2 for food"))
         if (exercise_lock==1):
             with open("mom_exercise.txt") as op:
@@ -105,7 +105,7 @@ def retrive(client):
                 for i in op:
                     print(i, end="")
 
-    elif (client==3):
+    elif (family_member==3):
         exercise_lock = int(input("Enter 1 For exercise and 2 for food"))
         if (exercise_lock==1):
             with open("bro_exercise.txt") as op:
@@ -116,7 +116,7 @@ def retrive(client):
                 for i in op:
                     print(i, end="")
 
-    elif (client==4):
+    elif (family_member==4):
         exercise_lock = int(input("Enter 1 For exercise and 2 for food"))
         if (exercise_lock==1):
             with open("sis_exercise.txt") as op:
@@ -127,7 +127,7 @@ def retrive(client):
                 for i in op:
                     print(i, end="")
 
-    elif (client==5):
+    elif (family_member==5):
         exercise_lock = int(input("Enter 1 For exercise and 2 for food"))
         if (exercise_lock==1):
             with open("Ana_exercise.txt") as op:
@@ -142,13 +142,13 @@ def retrive(client):
         print("Please enter valid input (dad, mom, bro, sis, Ana)")
 print("Health Management System Of a Family:")
 
-options = int(input("Press 1 for log and 2 for retrive"))
+options = int(input("Press 1 for lock and 2 for retrive"))
 
 if options==1:
-    client_name = int(input("Press 1 for dad, 2 for mom, 3 for bro, 4 for sis, 5 for Ana "))
-    take(client_name)
+    family_member_name = int(input("Press 1 for dad, 2 for mom, 3 for bro, 4 for sis, 5 for Ana "))
+    take(family_member_name)
 
 else:
-    client_name = int(input("Press 1 for dad, 2 for mom, 3 for bro, 4 for sis, 5 for Ana "))
-    retrive(client_name)
+    family_member_name = int(input("Press 1 for dad, 2 for mom, 3 for bro, 4 for sis, 5 for Ana "))
+    retrive(family_member_name)
 
