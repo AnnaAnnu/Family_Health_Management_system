@@ -3,7 +3,7 @@
 
 
 
- The task is to create a "Health Management System." As everyone in family is noe=w health concious and are curious about fitness and nutrition.
+ The task is to create a "Health Management System." As everyone in family is now health concious and are curious about fitness and nutrition.
  
  We will be doing this with family with five members, i.e. (dad, mom, bro, sis, Ana).
  For each Family member, we have to design their exercise and diet plan.
