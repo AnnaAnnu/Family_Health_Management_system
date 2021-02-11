@@ -7,27 +7,27 @@ def take(client):
     if (client==1):
         exercise_lock = int(input("Enter 1 for exercise and 2 for food"))
         if(exercise_lock==1):
-            value = input("Enter the Exercise time of dad in a day:\n")
+            value = input("Enter Dad's Exercise in a day:\n")
             with open("dad_exercise.txt","a") as op:
                 op.write(str([str(gettime())])+":" + value + "\n")
             print("Successfully Written")
 
         elif(exercise_lock==2):
-            value = input("Enter the food consumed by dad in a day:\n")
+            value = input("Enter the food that must be consumed by dad in a day:\n")
             with open("dad_food.txt","a") as op:
                 op.write(str([str(gettime())]) + ":" + value +"\n")
                 print("Successfully Written")
     elif(client==2):
         exercise_lock = int(input("Enter 1 for exercise and 2 for food"))
         if (exercise_lock==1):
-            value = input("Enter the exercise time for mom in  day:\n")
+            value = input("Enter Mom's Exercise  in  day:\n")
             with open("mom_exercise.txt","a") as op:
                 op.write(str([str(gettime())]) + ":" + value + "\n")
                 print("Successfully Written")
 
 
         elif (exercise_lock==2):
-            value = input("Enter the food consumed by mom in a day:\n")
+            value = input("Enter the food that must be consumed by mom in a day:\n")
             with open("mom_food.txt", "a") as op:
                 op.write(str([str(gettime())]) + ":" + value + "\n")
                 print("Successfully Written")
@@ -35,14 +35,14 @@ def take(client):
     elif (client==3):
         exercise_lock = int(input("Enter 1 for exercise and 2 for food"))
         if (exercise_lock==1):
-            value = input("Enter the exercise time for bro in  day:\n")
+            value = input("Enter Brother's Exercise in  day:\n")
             with open("bro_exercise.txt", "a") as op:
                 op.write(str([str(gettime())]) + ":" + value + "\n")
                 print("Successfully Written")
 
 
         elif (exercise_lock==2):
-            value = input("Enter the food consumed by mom in a day:\n")
+            value = input("Enter the food that must be consumed by brother in a day:\n")
             with open("bro_food.txt", "a") as op:
                 op.write(str([str(gettime())]) + ":" + value + "\n")
                 print("Successfully Written")
@@ -51,14 +51,14 @@ def take(client):
     elif (client==4):
         exercise_lock = int(input("Enter 1 for exercise and 2 for food"))
         if (exercise_lock==1):
-            value = input("Enter the exercise time for sis in  day:\n")
+            value = input("Enter Sister's Exercise  in  day:\n")
             with open("sis_exercise.txt", "a") as op:
                 op.write(str([str(gettime())]) + ":" + value + "\n")
                 print("Successfully Written")
 
 
         elif (exercise_lock==2):
-            value = input("Enter the food consumed by sis in a day:\n")
+            value = input("Enter the food that must be consumed by sis in a day:\n")
             with open("sis_food.txt", "a") as op:
                 op.write(str([str(gettime())]) + ":" + value + "\n")
                 print("Successfully Written")
@@ -67,14 +67,14 @@ def take(client):
     elif (client==5):
         exercise_lock = int(input("Enter 1 for exercise and 2 for food"))
         if (exercise_lock==1):
-            value = input("Enter the exercise time for Ana in  day:\n")
+            value = input("Enter Ana's Exercise in a day:\n")
             with open("Ana_exercise.txt", "a") as op:
                 op.write(str([str(gettime())]) + ":" + value + "\n")
                 print("Successfully Written")
 
 
         elif (exercise_lock==2):
-            value = input("Enter the food consumed by Ana in a day:\n")
+            value = input("Enter the food that must be consumed by Ana in a day:\n")
             with open("Ana_food.txt", "a") as op:
                 op.write(str([str(gettime())]) + ":" + value + "\n")
                 print("Successfully Written")
